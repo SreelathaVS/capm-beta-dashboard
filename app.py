@@ -14,9 +14,9 @@ st.set_page_config(
 
 # ----------------- SIDEBAR CONTROLS -----------------
 st.sidebar.header("Model Inputs")
-ticker = st.sidebar.text_input("Stock Ticker", value="AAPL").upper().strip()
+ticker = st.sidebar.text_input("Stock Ticker", value="RELIANCE.NS").upper().strip()
 benchmark = (
-    st.sidebar.text_input("Benchmark Index", value="^GSPC").upper().strip()
+    st.sidebar.text_input("Benchmark Index", value="^NSEI").upper().strip()
 )
 period = st.sidebar.selectbox(
     "Lookback Period", ["1y", "2y", "3y", "5y"], index=2
